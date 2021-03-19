@@ -1,0 +1,25 @@
+I have edited on top of all of the below, some public domain assets may not be listed (mostly because I didn't kept notes on them).
+
+Sound Effects, Ambience and Music:
+
+rpg_sound_pack - by artisticdude
+Grass Foot Step Sounds (Yo Frankie!) - by Blender Foundation
+40+ FREE Footstep SFX - by PremiumBeat.com
+"Windy Ambience" - by MrAuralization 
+Radio Static - by digifishmusic
+cave_amb.wav - Zixem
+Cavernous Drone - glueIsobar
+crowd int medium movie theater lobby Paramount2 Montreal, Canada.flac - kyles
+brazilian-beach-party.wav - audiactiva
+The Refrigerator - karinalarasart
+Ambience, Seaside Waves, Close, A.wav - InspectorJ (Jonathan Shaw)
+
+Graphics:
+
+Walkie talkie - by Noah
+sunset - Abdullah Ghatasheh
+Balloon - by Michael Stöter
+
+Script Modules:
+Timer - Crimson Wizard
+Tween - Edmundito
