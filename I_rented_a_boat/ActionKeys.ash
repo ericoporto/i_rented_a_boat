@@ -5,6 +5,7 @@ struct ActionKeys {
   writeprotected bool Left;
   writeprotected bool Right;
   writeprotected bool Run;
+  writeprotected bool Flashlight;
   
   bool BlockInput;
   

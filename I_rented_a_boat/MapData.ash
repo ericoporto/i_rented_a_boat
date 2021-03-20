@@ -26,6 +26,7 @@ struct MapData {
   float Base_PlayerSpeed;
   
   MapXYType LoopType;
+  bool IsCave;
 
   import int LoadHeightMap(int i_loaded);
   import int LoadColorMap(int i_loaded);
