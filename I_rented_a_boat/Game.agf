@@ -671,12 +671,16 @@
             <Description xml:space="preserve">The island</Description>
           </UnloadedRoom>
           <UnloadedRoom>
+            <Number>31</Number>
+            <Description>Intro</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
             <Number>32</Number>
             <Description>Loading...</Description>
           </UnloadedRoom>
           <UnloadedRoom>
-            <Number>31</Number>
-            <Description>Intro</Description>
+            <Number>33</Number>
+            <Description>End</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -2849,6 +2853,287 @@ stop]]></Script>
               </DialogOption>
             </DialogOptions>
           </Dialog>
+          <Dialog>
+            <ID>7</ID>
+            <Name>dAtThePeak</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+return
+@1
+Jim: I'm at the peak!
+Julie: Yey!
+Julie: Just wait a bit there, see if you spot something.
+  CallRoomScript(eRSE_Room4_BalloonApproach);
+option-off 1
+option-on 2
+option-on 3
+stop
+@2
+Jim: I see something!
+Julie: What is it?
+option-off 2
+option-off 3
+  if(bool_balloon_in_position) {
+option-on 5
+  }
+option-on 6
+option-on 7
+return
+@3
+Jim: Just an empty world...
+Julie: I am sure a ship will find us.
+Julie: But we need to find it first!
+option-off 2
+option-off 3
+option-on 4
+return
+@4
+option-off 4
+option-on 8
+return
+@5 // A balloon?
+  RestoreWalkableArea(1);
+  CallRoomScript(eRSE_Room4_RestoreWalk1);
+Jim: A balloon?
+Julie: I am seeing it too!
+Jim: Julie, what do you think?
+Julie: I think this will be our best shot tonight.
+Jim: I think it has to land on the clearance...
+Julie: Run to it! This is our ticket out of here!
+Julie: I will meet you there.
+Jim: On my way!
+option-off 5
+option-off 6
+option-off 7
+option-off 2
+option-off 3
+  bool_in_dialog = false;
+stop
+@6 // Just water
+Jim: Just seeing a lot of water...
+Julie: Keep looking! I am sure something will come up!
+option-off 5
+option-off 6
+option-off 7
+option-on 4
+return
+@7 // The Radio Tower
+Jim: I see your radio tower!
+Julie: I will sure tell whatever old military branch owned it that it's now mine.
+Julie: Once we are out of here.
+option-off 5
+option-off 6
+option-off 7
+option-on 4
+return
+@8
+option-on 2
+option-on 3
+option-off 8
+  bool_in_dialog = false;
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text>atPeakStart</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">I see something</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">Still nothing</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text>endQuestion</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text xml:space="preserve">A balloon?</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text xml:space="preserve">Just water</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>7</ID>
+                <Text xml:space="preserve">The Radio Tower</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>8</ID>
+                <Text>EndConversation</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>8</ID>
+            <Name>dAreYouAtThePeak</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: I'm almost at the peak.
+Julie: Radio me when you reach the peak!
+  bool_in_dialog = false;
+stop
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>9</ID>
+            <Name>dMountainMiddle</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+return
+@1
+  bool_in_dialog = true;
+Jim: There's quite a view from here.
+Julie: Do you see anything on the sea?
+  while(Player_Angle < 0.0)
+  {
+    Wait(SecondsToLoops(1.0));
+Jim: Let me look at the sea.
+  }
+Jim: I am only seeing water Julie...
+Julie: Keep going up, let's try from the top.
+  bool_in_dialog = false;
+option-off 1
+option-on 2
+stop
+@2
+  bool_in_dialog = true;
+Julie: Keep going up, let's try from the top.
+  bool_in_dialog = false;
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">first try</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">second try</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>10</ID>
+            <Name>dAtTheBase</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+return
+@1
+Jim: I think I found the Lighthouse Mountain Julie...
+Julie: It's a good name, isn't?
+option-off 1
+option-on 2
+option-on 3
+return
+@2
+Jim: It's a fitting name.
+Julie: Only missing a light at the top!
+Jim: I only have my dying phone light... Maybe another day!
+option-off 2
+option-off 3
+option-on 4
+return
+@3
+Jim: Could be the Wedding Cake Mountain!
+Julie: I didn't want to sound like I was pressuring you.
+Jim: hm...
+Jim: Maybe it's a signal.
+option-off 2
+option-off 3
+option-on 4
+return
+@4
+Julie: I hope that from the view on the top, we will se a ship.
+Jim: Right, I am going up!
+option-off 4
+option-on 5
+  bool_in_dialog = false;
+stop
+@5
+Jim: Julie?
+Julie: Yes?
+Jim: Just checking...
+  bool_in_dialog = false;
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text>firstTimeAtTheBase</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">It is!</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text xml:space="preserve">Could be Wedding Cake Mountain</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text>end</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text>secondTimeAtTheBase</Text>
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>11</ID>
+            <Name>dDeadEndFinal</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: Julie, you there?  
+  bool_in_dialog = false;
+stop]]></Script>
+            <DialogOptions />
+          </Dialog>
         </Dialogs>
       </DialogFolder>
     </Dialogs>
@@ -3390,6 +3675,11 @@ stop]]></Script>
         </GlobalVariable>
         <GlobalVariable>
           <Name>bool_in_dialog</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_balloon_in_position</Name>
           <Type>bool</Type>
           <DefaultValue>false</DefaultValue>
         </GlobalVariable>
