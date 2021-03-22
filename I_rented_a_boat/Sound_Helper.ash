@@ -8,6 +8,7 @@ import void Sound_MusicStop();
 import void Sound_AmbientStop();
 import void Sound_AmbientSetVolume(int vol);
 import void Sound_MusicFadeOut(float time);
+import void Sound_SFXPlay(AudioClip* sfx);
 
 // Helper modules are simple modules, made to write once, test once functionality
 // Different from utility modules, Helper modules contain game or engine SPECIFIC functionality
