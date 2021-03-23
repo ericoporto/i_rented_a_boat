@@ -11,7 +11,7 @@
       <CustomResolution>640,360</CustomResolution>
       <AllowRelativeAssetResolutions>False</AllowRelativeAssetResolutions>
       <CompressSprites>False</CompressSprites>
-      <SaveScreenshots>False</SaveScreenshots>
+      <SaveScreenshots>True</SaveScreenshots>
       <RoomTransition>CrossFade</RoomTransition>
       <MouseWheelEnabled>True</MouseWheelEnabled>
       <UseLowResCoordinatesInScript>False</UseLowResCoordinatesInScript>
@@ -78,7 +78,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName>I_rented_a_boat</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>30</AudioIndexer>
+      <AudioIndexer>31</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
       <RenderAtScreenResolution>False</RenderAtScreenResolution>
     </Settings>
@@ -2173,6 +2173,222 @@
                 <Enabled>True</Enabled>
                 <Visible>False</Visible>
               </GUIListBox>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>6</Left>
+                <Top>61</Top>
+                <ZOrder>11</ZOrder>
+                <ID>11</ID>
+                <Name>menu_thrsh_load_btn1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>220</Left>
+                <Top>61</Top>
+                <ZOrder>12</ZOrder>
+                <ID>12</ID>
+                <Name>menu_thrsh_load_btn2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>433</Left>
+                <Top>61</Top>
+                <ZOrder>13</ZOrder>
+                <ID>13</ID>
+                <Name>menu_thrsh_load_btn3</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>6</Left>
+                <Top>165</Top>
+                <ZOrder>14</ZOrder>
+                <ID>14</ID>
+                <Name>menu_thrsh_load_btn4</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>220</Left>
+                <Top>165</Top>
+                <ZOrder>15</ZOrder>
+                <ID>15</ID>
+                <Name>menu_thrsh_load_btn5</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>433</Left>
+                <Top>165</Top>
+                <ZOrder>16</ZOrder>
+                <ID>16</ID>
+                <Name>menu_thrsh_load_btn6</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>433</Left>
+                <Top>269</Top>
+                <ZOrder>17</ZOrder>
+                <ID>17</ID>
+                <Name>menu_thrsh_load_btn9</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>6</Left>
+                <Top>269</Top>
+                <ZOrder>18</ZOrder>
+                <ID>18</ID>
+                <Name>menu_thrsh_load_btn7</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>220</Left>
+                <Top>269</Top>
+                <ZOrder>19</ZOrder>
+                <ID>19</ID>
+                <Name>menu_thrsh_load_btn8</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
             </Controls>
           </GUIMain>
           <GUIMain>
@@ -2431,6 +2647,222 @@
                 <ZOrder>9</ZOrder>
                 <ID>9</ID>
                 <Name>menu_save_btn_s9</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>6</Left>
+                <Top>61</Top>
+                <ZOrder>10</ZOrder>
+                <ID>10</ID>
+                <Name>menu_thrsh_save_btn1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>220</Left>
+                <Top>61</Top>
+                <ZOrder>11</ZOrder>
+                <ID>11</ID>
+                <Name>menu_thrsh_save_btn2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>433</Left>
+                <Top>61</Top>
+                <ZOrder>12</ZOrder>
+                <ID>12</ID>
+                <Name>menu_thrsh_save_btn3</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>6</Left>
+                <Top>165</Top>
+                <ZOrder>13</ZOrder>
+                <ID>13</ID>
+                <Name>menu_thrsh_save_btn4</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>220</Left>
+                <Top>165</Top>
+                <ZOrder>14</ZOrder>
+                <ID>14</ID>
+                <Name>menu_thrsh_save_btn5</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>433</Left>
+                <Top>165</Top>
+                <ZOrder>15</ZOrder>
+                <ID>15</ID>
+                <Name>menu_thrsh_save_btn6</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>6</Left>
+                <Top>269</Top>
+                <ZOrder>16</ZOrder>
+                <ID>16</ID>
+                <Name>menu_thrsh_save_btn7</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>220</Left>
+                <Top>269</Top>
+                <ZOrder>17</ZOrder>
+                <ID>17</ID>
+                <Name>menu_thrsh_save_btn8</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>212</PushedImage>
+                <MouseoverImage>211</MouseoverImage>
+                <Image>210</Image>
+                <Text xml:space="preserve">New Button</Text>
+                <Height>36</Height>
+                <Locked>True</Locked>
+                <Width>29</Width>
+                <Left>433</Left>
+                <Top>269</Top>
+                <ZOrder>18</ZOrder>
+                <ID>18</ID>
+                <Name>menu_thrsh_save_btn9</Name>
                 <Clickable>True</Clickable>
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
@@ -3143,6 +3575,209 @@
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
               </GUILabel>
+            </Controls>
+          </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>360</Height>
+              <Width>640</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>False</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>32</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>201</BackgroundImage>
+              <ID>23</ID>
+              <Name>gMenu_Delete_Save</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text>Cancel</Text>
+                <Height>27</Height>
+                <Locked>True</Locked>
+                <Width>153</Width>
+                <Left>362</Left>
+                <Top>180</Top>
+                <ZOrder>6</ZOrder>
+                <ID>0</ID>
+                <Name>menu_savedel_btn_no</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUIButton>
+                <OnClick>menu_btn_OnClick</OnClick>
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text xml:space="preserve">Yes, Delete</Text>
+                <Height>27</Height>
+                <Locked>True</Locked>
+                <Width>153</Width>
+                <Left>125</Left>
+                <Top>180</Top>
+                <ZOrder>7</ZOrder>
+                <ID>1</ID>
+                <Name>menu_savedel_btn_yes</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>59164</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>121</Height>
+                <Locked>False</Locked>
+                <Width>413</Width>
+                <Left>116</Left>
+                <Top>50</Top>
+                <ZOrder>8</ZOrder>
+                <ID>2</ID>
+                <Name>label_delete_save</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>0</Image>
+                <Text />
+                <Height>360</Height>
+                <Locked>True</Locked>
+                <Width>640</Width>
+                <Left>0</Left>
+                <Top>0</Top>
+                <ZOrder>5</ZOrder>
+                <ID>3</ID>
+                <Name>Button14</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>121</Height>
+                <Locked>False</Locked>
+                <Width>413</Width>
+                <Left>116</Left>
+                <Top>49</Top>
+                <ZOrder>1</ZOrder>
+                <ID>4</ID>
+                <Name>label_delete_save_shad1</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>121</Height>
+                <Locked>False</Locked>
+                <Width>413</Width>
+                <Left>116</Left>
+                <Top>51</Top>
+                <ZOrder>2</ZOrder>
+                <ID>5</ID>
+                <Name>label_delete_save_shad2</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>121</Height>
+                <Locked>False</Locked>
+                <Width>413</Width>
+                <Left>117</Left>
+                <Top>50</Top>
+                <ZOrder>3</ZOrder>
+                <ID>6</ID>
+                <Name>label_delete_save_shad3</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">New Label</Text>
+                <Height>121</Height>
+                <Locked>False</Locked>
+                <Width>413</Width>
+                <Left>115</Left>
+                <Top>50</Top>
+                <ZOrder>4</ZOrder>
+                <ID>7</ID>
+                <Name>label_delete_save_shad4</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>True</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>201</Image>
+                <Text />
+                <Height>122</Height>
+                <Locked>False</Locked>
+                <Width>420</Width>
+                <Left>112</Left>
+                <Top>48</Top>
+                <ZOrder>0</ZOrder>
+                <ID>8</ID>
+                <Name>Button15</Name>
+                <Clickable>False</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
             </Controls>
           </GUIMain>
         </GUIs>
@@ -5443,6 +6078,11 @@ stop]]></Script>
         </GlobalVariable>
         <GlobalVariable>
           <Name>bool_balloon_in_position</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_not_first_time</Name>
           <Type>bool</Type>
           <DefaultValue>false</DefaultValue>
         </GlobalVariable>
@@ -8523,6 +9163,56 @@ stop]]></Script>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>32</ImportHeight>
                       <ImportWidth>32</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="trash_save">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="210" Width="29" Height="36" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/guis/trash_save_normal_btn.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>36</ImportHeight>
+                      <ImportWidth>29</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="211" Width="29" Height="36" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/guis/trash_save_over_btn.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>36</ImportHeight>
+                      <ImportWidth>29</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="212" Width="29" Height="36" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/guis/trash_save_pushed_btn.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>36</ImportHeight>
+                      <ImportWidth>29</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -14576,6 +15266,19 @@ stop]]></Script>
                 <DefaultPriority>Inherit</DefaultPriority>
                 <DefaultRepeat>Inherit</DefaultRepeat>
                 <FileLastModifiedDate>2021-03-21 23:57:56Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aTrashbin</ScriptName>
+                <ID>30</ID>
+                <SourceFileName>Sound/SFX/trashbin.ogg</SourceFileName>
+                <Index>31</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-03-23 02:26:11Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>
