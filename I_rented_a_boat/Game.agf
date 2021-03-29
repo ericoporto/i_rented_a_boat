@@ -78,7 +78,7 @@
       <SaveGameFileExtension />
       <SaveGameFolderName>I_rented_a_boat</SaveGameFolderName>
       <BinaryFilesInSourceControl>False</BinaryFilesInSourceControl>
-      <AudioIndexer>31</AudioIndexer>
+      <AudioIndexer>37</AudioIndexer>
       <BuildTargets xml:space="preserve">Windows, Linux</BuildTargets>
       <RenderAtScreenResolution>False</RenderAtScreenResolution>
     </Settings>
@@ -696,6 +696,14 @@
           <UnloadedRoom>
             <Number>34</Number>
             <Description xml:space="preserve">Main Menu</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>35</Number>
+            <Description xml:space="preserve">Good End</Description>
+          </UnloadedRoom>
+          <UnloadedRoom>
+            <Number>36</Number>
+            <Description>Credits</Description>
           </UnloadedRoom>
         </UnloadedRooms>
       </UnloadedRoomFolder>
@@ -3801,6 +3809,44 @@
             </NormalGUI>
             <Controls />
           </GUIMain>
+          <GUIMain>
+            <NormalGUI>
+              <OnClick />
+              <Height>32</Height>
+              <Width>128</Width>
+              <Left>0</Left>
+              <Top>0</Top>
+              <Clickable>True</Clickable>
+              <Visible>False</Visible>
+              <PopupStyle>Normal</PopupStyle>
+              <PopupYPos>0</PopupYPos>
+              <ZOrder>0</ZOrder>
+              <BorderColor>0</BorderColor>
+              <Transparency>0</Transparency>
+              <BackgroundColor>0</BackgroundColor>
+              <BackgroundImage>0</BackgroundImage>
+              <ID>25</ID>
+              <Name>gLoopInventory</Name>
+            </NormalGUI>
+            <Controls>
+              <GUIInventory>
+                <ItemWidth>20</ItemWidth>
+                <ItemHeight>20</ItemHeight>
+                <CharacterID>-1</CharacterID>
+                <Height>20</Height>
+                <Locked>False</Locked>
+                <Width>112</Width>
+                <Left>8</Left>
+                <Top>8</Top>
+                <ZOrder>0</ZOrder>
+                <ID>0</ID>
+                <Name>InventoryWindow1</Name>
+                <Clickable>False</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIInventory>
+            </Controls>
+          </GUIMain>
         </GUIs>
       </GUIFolder>
     </GUIs>
@@ -3814,9 +3860,27 @@
             <HotspotY>0</HotspotY>
             <PlayerStartsWithItem>False</PlayerStartsWithItem>
             <CursorImage>0</CursorImage>
-            <Image>214</Image>
+            <Image>239</Image>
             <Description xml:space="preserve">New inventory item</Description>
             <Name>iKey</Name>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+            </Interactions>
+          </InventoryItem>
+          <InventoryItem>
+            <ID>2</ID>
+            <HotspotX>0</HotspotX>
+            <HotspotY>0</HotspotY>
+            <PlayerStartsWithItem>False</PlayerStartsWithItem>
+            <CursorImage>0</CursorImage>
+            <Image>240</Image>
+            <Description />
+            <Name>iDarkDevice</Name>
             <Properties />
             <Interactions>
               <Event Index="0" />
@@ -4006,7 +4070,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>32</StartingRoom>
+            <StartingRoom>34</StartingRoom>
             <StartX>944</StartX>
             <StartY>612</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -4762,6 +4826,326 @@
             <ScriptName>cCaveKey</ScriptName>
             <RealName xml:space="preserve">New character</RealName>
             <NormalView>14</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>20</ID>
+            <ScriptName>cCaveDoor1</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>15</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>21</ID>
+            <ScriptName>cCaveDoor2</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>16</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>22</ID>
+            <ScriptName>cCaveDoor3</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>17</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>True</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>23</ID>
+            <ScriptName>cCaveDoor4</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>18</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>24</ID>
+            <ScriptName>cCaveDoor5</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>19</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>25</ID>
+            <ScriptName>cCaveDoor6</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>20</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>26</ID>
+            <ScriptName>cCaveDoor7</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>21</NormalView>
+            <SpeechView>0</SpeechView>
+            <IdleView>0</IdleView>
+            <ThinkingView>0</ThinkingView>
+            <BlinkingView>0</BlinkingView>
+            <StartingRoom>2</StartingRoom>
+            <StartX>160</StartX>
+            <StartY>120</StartY>
+            <UniformMovementSpeed>False</UniformMovementSpeed>
+            <MovementSpeed>3</MovementSpeed>
+            <MovementSpeedX>3</MovementSpeedX>
+            <MovementSpeedY>3</MovementSpeedY>
+            <AnimationDelay>4</AnimationDelay>
+            <SpeechAnimationDelay>5</SpeechAnimationDelay>
+            <SpeechColor>12</SpeechColor>
+            <Solid>False</Solid>
+            <Clickable>False</Clickable>
+            <UseRoomAreaScaling>False</UseRoomAreaScaling>
+            <UseRoomAreaLighting>False</UseRoomAreaLighting>
+            <TurnBeforeWalking>False</TurnBeforeWalking>
+            <DiagonalLoops>False</DiagonalLoops>
+            <AdjustSpeedWithScaling>False</AdjustSpeedWithScaling>
+            <AdjustVolumeWithScaling>False</AdjustVolumeWithScaling>
+            <MovementLinkedToAnimation>False</MovementLinkedToAnimation>
+            <Properties />
+            <Interactions>
+              <Event Index="0" />
+              <Event Index="1" />
+              <Event Index="2" />
+              <Event Index="3" />
+              <Event Index="4" />
+              <Event Index="5" />
+              <Event Index="6" />
+              <Event Index="7" />
+            </Interactions>
+          </Character>
+          <Character>
+            <ID>27</ID>
+            <ScriptName>cCaveDoor8</ScriptName>
+            <RealName xml:space="preserve">New character</RealName>
+            <NormalView>22</NormalView>
             <SpeechView>0</SpeechView>
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
@@ -5664,68 +6048,119 @@ stop]]></Script>
           </Dialog>
           <Dialog>
             <ID>12</ID>
-            <Name>dBalloonist1</Name>
+            <Name>dBadEnd1</Name>
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
+  bool_in_end = true;
+Jim: Wait, ... Sir... Please wait!
+Balloonist: Hi there. I am not going anywhere here.
+Jim: My girlfriend, she is comming any minute, can we take a ride with you?
+Balloonist: Of course. But I am not going anywhere today, it's getting dark.
+Balloonist: I am putting my burner in wait. Tomorrow we go at first light.
+Balloonist: This should be plenty of time for your friend to be here.
+Jim: Thank you Sir. 
+  bool_to_badend_d2 = false;
+stop
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>13</ID>
+            <Name>dDarknedDevice</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: This cube looks like some weird old electronic device. It appears to be off.
 return
 @1
-  bool_in_end = true;
-Balloonist: 201X, one of your last college parties
-Intro: Your friends are on the corner and a woman laughs with them
-Intro: Come closer?
-option-off 1
-option-on 2
-option-on 3
-return
+  Wait(SecondsToLoops(0.25));
+  CallRoomScript(eRSE_Room4_CollectedDevice);
+  Wait(SecondsToLoops(0.25));
+  bool_in_dialog = false;
+stop
 @2
-Intro: You pass by the bar and then greets the group
-Jim:      Hey guys! Got some beer!!!
-option-off 2
-option-off 3
-option-on 4
-return
-@3
-Intro: You try look the other way, but Mike sees you. He gestures to you, you can't refuse.
-Friend: Jim! Come here!
-option-off 2
-option-off 3
-option-on 4
-return
-@4
-Jim:   ...Hi! I'm Jim! I haven't met you before...
-Julie: You must be the one who always use hawaiian shirts
-Friend:   Dude, I was telling Julie about that time you crashed the car with us in.
-Julie: You are not driving me home, that is for sure!
-  // bool_to_intro_d2 = true;
+  Wait(SecondsToLoops(0.8));
+  bool_in_dialog = false;
+  Wait(SecondsToLoops(0.2));
 stop
 ]]></Script>
             <DialogOptions>
               <DialogOption>
                 <ID>1</ID>
-                <Text />
+                <Text xml:space="preserve">Collect the device.</Text>
                 <Show>True</Show>
                 <Say>False</Say>
               </DialogOption>
               <DialogOption>
                 <ID>2</ID>
-                <Text />
-                <Show>False</Show>
-                <Say>False</Say>
-              </DialogOption>
-              <DialogOption>
-                <ID>3</ID>
-                <Text />
-                <Show>False</Show>
-                <Say>False</Say>
-              </DialogOption>
-              <DialogOption>
-                <ID>4</ID>
-                <Text />
-                <Show>False</Show>
+                <Text xml:space="preserve">Let it be.</Text>
+                <Show>True</Show>
                 <Say>False</Say>
               </DialogOption>
             </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>14</ID>
+            <Name>dEmptyCavity1</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: It's a square-shaped cavity, appears to have a connector for some electronic device.
+  bool_in_dialog = false;
+stop
+]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>15</ID>
+            <Name>dEmptyCavity2</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: It's a square-shaped cavity, appears to have a connector compatible with the cube device.
+return
+@1
+  Wait(SecondsToLoops(0.25));
+  CallRoomScript(eRSE_Room4_ConnectedDevice);
+  Wait(SecondsToLoops(0.25));
+  bool_in_dialog = false;
+stop
+@2
+  Wait(SecondsToLoops(0.8));
+  bool_in_dialog = false;
+  Wait(SecondsToLoops(0.2));
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text xml:space="preserve">Connect cube device</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text xml:space="preserve">Let it be.</Text>
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>16</ID>
+            <Name>dBadEnd2</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_end = true;
+  bool_in_end = false;
+stop
+]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -6305,6 +6740,11 @@ stop
         </GlobalVariable>
         <GlobalVariable>
           <Name>bool_in_end</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_to_badend_d2</Name>
           <Type>bool</Type>
           <DefaultValue>false</DefaultValue>
         </GlobalVariable>
@@ -7482,15 +7922,140 @@ stop
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="door">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="231" Width="79" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p1.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>79</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="232" Width="92" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p2.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>92</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="233" Width="100" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p3.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>100</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="234" Width="106" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p4.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>106</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="235" Width="91" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p5.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>91</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="236" Width="95" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p6.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>95</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="237" Width="105" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p7.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>105</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="238" Width="102" Height="435" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/Maps/area2/extras/door/door_p8.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>435</ImportHeight>
+                      <ImportWidth>102</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
-              <Sprite Slot="41" Width="512" Height="512" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+              <Sprite Slot="41" Width="1024" Height="512" ColorDepth="32" Resolution="Real" AlphaChannel="False">
                 <Source>
                   <FileName>Sprites/Maps/area2/area2_heightmap_ags.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>512</ImportHeight>
-                  <ImportWidth>512</ImportWidth>
+                  <ImportWidth>1024</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -7499,13 +8064,13 @@ stop
                   <ImportAlphaChannel>False</ImportAlphaChannel>
                 </Source>
               </Sprite>
-              <Sprite Slot="42" Width="512" Height="512" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+              <Sprite Slot="42" Width="1024" Height="512" ColorDepth="32" Resolution="Real" AlphaChannel="False">
                 <Source>
                   <FileName>Sprites/Maps/area2/area2_colormap.png</FileName>
                   <OffsetX>0</OffsetX>
                   <OffsetY>0</OffsetY>
                   <ImportHeight>512</ImportHeight>
-                  <ImportWidth>512</ImportWidth>
+                  <ImportWidth>1024</ImportWidth>
                   <ImportAsTile>False</ImportAsTile>
                   <Frame>0</Frame>
                   <RemapToGamePalette>False</RemapToGamePalette>
@@ -9219,6 +9784,26 @@ stop
                   </Sprite>
                 </Sprites>
               </SpriteFolder>
+              <SpriteFolder Name="CaveToDraw">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="230" Width="15" Height="15" ColorDepth="32" Resolution="Real" AlphaChannel="False">
+                    <Source>
+                      <FileName>Sprites/Maps/area4/cave/cave.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>15</ImportHeight>
+                      <ImportWidth>15</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>NoTransparency</ImportMethod>
+                      <ImportAlphaChannel>False</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
             </SubFolders>
             <Sprites>
               <Sprite Slot="46" Width="1024" Height="1024" ColorDepth="32" Resolution="Real" AlphaChannel="False">
@@ -9700,6 +10285,41 @@ stop
                       <OffsetY>0</OffsetY>
                       <ImportHeight>36</ImportHeight>
                       <ImportWidth>29</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                </Sprites>
+              </SpriteFolder>
+              <SpriteFolder Name="InvGui">
+                <SubFolders />
+                <Sprites>
+                  <Sprite Slot="239" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/guis/inventory/iKey.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>16</ImportHeight>
+                      <ImportWidth>16</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="240" Width="16" Height="16" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/guis/inventory/iDarkDevice.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>16</ImportHeight>
+                      <ImportWidth>16</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
@@ -15147,6 +15767,470 @@ stop
               </Loop>
             </Loops>
           </View>
+          <View>
+            <ID>15</ID>
+            <Name>VIEW_CAVE_DOOR_1</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>231</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>231</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>231</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>231</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>16</ID>
+            <Name>VIEW_CAVE_DOOR_2</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>232</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>232</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>232</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>232</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>17</ID>
+            <Name>VIEW_CAVE_DOOR_3</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>233</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>233</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>233</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>233</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>18</ID>
+            <Name>VIEW_CAVE_DOOR_4</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>234</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>234</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>234</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>234</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>19</ID>
+            <Name>VIEW_CAVE_DOOR_5</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>235</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>235</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>235</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>235</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>20</ID>
+            <Name>VIEW_CAVE_DOOR_6</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>236</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>236</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>236</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>236</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>21</ID>
+            <Name>VIEW_CAVE_DOOR_7</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>237</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>237</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>237</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>237</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
+          <View>
+            <ID>22</ID>
+            <Name>VIEW_CAVE_DOOR_8</Name>
+            <Loops>
+              <Loop>
+                <ID>0</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>238</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>1</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>238</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>2</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>238</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+              <Loop>
+                <ID>3</ID>
+                <RunNextLoop>False</RunNextLoop>
+                <Frames>
+                  <ViewFrame>
+                    <ID>0</ID>
+                    <Image>238</Image>
+                    <Flipped>False</Flipped>
+                    <Delay>0</Delay>
+                    <Sound>0</Sound>
+                  </ViewFrame>
+                </Frames>
+              </Loop>
+            </Loops>
+          </View>
         </Views>
       </ViewFolder>
     </Views>
@@ -15676,6 +16760,30 @@ stop
                 <Author />
                 <Version />
                 <Key>1444563731</Key>
+                <IsHeader>False</IsHeader>
+              </Script>
+            </ScriptAndHeader_Script>
+          </ScriptAndHeader>
+          <ScriptAndHeader>
+            <ScriptAndHeader_Header>
+              <Script>
+                <FileName>MapManipulation.ash</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1144293324</Key>
+                <IsHeader>True</IsHeader>
+              </Script>
+            </ScriptAndHeader_Header>
+            <ScriptAndHeader_Script>
+              <Script>
+                <FileName>MapManipulation.asc</FileName>
+                <Name />
+                <Description />
+                <Author />
+                <Version />
+                <Key>1144293324</Key>
                 <IsHeader>False</IsHeader>
               </Script>
             </ScriptAndHeader_Script>
@@ -16227,6 +17335,58 @@ stop
                     <DefaultRepeat>Inherit</DefaultRepeat>
                     <FileLastModifiedDate>2021-03-13 01:54:29Z</FileLastModifiedDate>
                   </AudioClip>
+                  <AudioClip>
+                    <ScriptName>aStep_metal01</ScriptName>
+                    <ID>33</ID>
+                    <SourceFileName>Sound/SFX/Steps/step_metal01.ogg</SourceFileName>
+                    <Index>34</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>OGG</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2021-03-29 00:48:46Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ScriptName>aStep_metal02</ScriptName>
+                    <ID>34</ID>
+                    <SourceFileName>Sound/SFX/Steps/step_metal02.ogg</SourceFileName>
+                    <Index>35</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>OGG</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2021-03-29 00:49:12Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ScriptName>aStep_metal03</ScriptName>
+                    <ID>35</ID>
+                    <SourceFileName>Sound/SFX/Steps/step_metal03.ogg</SourceFileName>
+                    <Index>36</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>OGG</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2021-03-29 00:49:47Z</FileLastModifiedDate>
+                  </AudioClip>
+                  <AudioClip>
+                    <ScriptName>aStep_metal04</ScriptName>
+                    <ID>36</ID>
+                    <SourceFileName>Sound/SFX/Steps/step_metal04.ogg</SourceFileName>
+                    <Index>37</Index>
+                    <Type>3</Type>
+                    <BundlingType>InGameEXE</BundlingType>
+                    <FileType>OGG</FileType>
+                    <DefaultVolume>-1</DefaultVolume>
+                    <DefaultPriority>Inherit</DefaultPriority>
+                    <DefaultRepeat>Inherit</DefaultRepeat>
+                    <FileLastModifiedDate>2021-03-29 00:50:47Z</FileLastModifiedDate>
+                  </AudioClip>
                 </AudioClips>
                 <AudioClipFolder>
                   <DefaultVolume>100</DefaultVolume>
@@ -16302,6 +17462,32 @@ stop
                 <DefaultPriority>Inherit</DefaultPriority>
                 <DefaultRepeat>Inherit</DefaultRepeat>
                 <FileLastModifiedDate>2021-03-23 02:26:11Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aKey_pickup</ScriptName>
+                <ID>31</ID>
+                <SourceFileName>Sound/SFX/key_pickup.ogg</SourceFileName>
+                <Index>32</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-03-29 00:02:18Z</FileLastModifiedDate>
+              </AudioClip>
+              <AudioClip>
+                <ScriptName>aJail_door</ScriptName>
+                <ID>32</ID>
+                <SourceFileName>Sound/SFX/jail_door.ogg</SourceFileName>
+                <Index>33</Index>
+                <Type>3</Type>
+                <BundlingType>InGameEXE</BundlingType>
+                <FileType>OGG</FileType>
+                <DefaultVolume>-1</DefaultVolume>
+                <DefaultPriority>Inherit</DefaultPriority>
+                <DefaultRepeat>Inherit</DefaultRepeat>
+                <FileLastModifiedDate>2021-03-29 00:13:29Z</FileLastModifiedDate>
               </AudioClip>
             </AudioClips>
             <AudioClipFolder>

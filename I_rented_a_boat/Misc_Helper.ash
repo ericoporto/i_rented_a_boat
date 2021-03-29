@@ -5,5 +5,7 @@
 
 enum eRoomScriptEvent {
   eRSE_Room4_BalloonApproach, 
-  eRSE_Room4_RestoreWalk1
+  eRSE_Room4_RestoreWalk1, 
+  eRSE_Room4_CollectedDevice, 
+  eRSE_Room4_ConnectedDevice, 
 };
