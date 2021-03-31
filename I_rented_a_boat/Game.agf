@@ -3923,7 +3923,7 @@
               <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>1</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>0</BackgroundColor>
@@ -3962,7 +3962,7 @@
               <Visible>False</Visible>
               <PopupStyle>Normal</PopupStyle>
               <PopupYPos>0</PopupYPos>
-              <ZOrder>0</ZOrder>
+              <ZOrder>1</ZOrder>
               <BorderColor>0</BorderColor>
               <Transparency>0</Transparency>
               <BackgroundColor>33</BackgroundColor>
@@ -4213,7 +4213,7 @@
             <IdleView>0</IdleView>
             <ThinkingView>0</ThinkingView>
             <BlinkingView>0</BlinkingView>
-            <StartingRoom>32</StartingRoom>
+            <StartingRoom>34</StartingRoom>
             <StartX>944</StartX>
             <StartY>612</StartY>
             <UniformMovementSpeed>True</UniformMovementSpeed>
@@ -7911,6 +7911,7 @@ return
 @2
 Intro: You pass by the bar and then greets the group
 Jim:      Hey guys! Got some beer!!!
+  bool_intro_avoided_julie = false;
 option-off 2
 option-off 3
 option-on 4
@@ -7918,6 +7919,7 @@ return
 @3
 Intro: You try look the other way, but Mike sees you. He gestures to you, you can't refuse.
 Friend: Jim! Come here!
+  bool_intro_avoided_julie = true;
 option-off 2
 option-off 3
 option-on 4
@@ -7976,6 +7978,7 @@ return
 @2
 Jim: I know this is a sequel, but it seems they are making a big deal with these movies.
 Julie: Oh, I watched the cartoons of these as a child. Could be interesting!
+  bool_intro_watched_comedy = false;
 option-off 2
 option-off 3
 option-on 4
@@ -7983,6 +7986,7 @@ return
 @3
 Jim: There's this one with Jennifer Aniston...
 Julie: Oh I love her! She is super funny!
+  bool_intro_watched_comedy = true;
 option-off 2
 option-off 3
 option-on 4
@@ -8040,6 +8044,7 @@ return
 @2
 Intro: You get up, and get to the fridge...
 Intro: Eggs, cold milk, some jam, and yesterdays bread!
+  bool_intro_made_breakfast = true;
 option-off 2
 option-off 3
 option-on 4
@@ -8047,6 +8052,7 @@ return
 @3
 Intro: You are glad you have two blankets. You lay to your favorite side of the bed.
 Intro: You have your back to Julie, so you touch her feet with yours.
+  bool_intro_made_breakfast = false;
 option-off 2
 option-off 3
 option-on 4
@@ -8393,6 +8399,10 @@ Jim: I am tired, Julie.
 Julie: Don't worry, we will soon be home.
 Julie: Laying on the couch watching movies and eating popcorn!
 Jim: Thanks, I needed that!
+  if(bool_intro_avoided_julie)
+  {
+Julie: you are not getting rid of me easily!
+  }
 option-off 8
 option-on 9
   CustomSave.doAutoSave();
@@ -8624,8 +8634,8 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-return
   bool_in_dialog = true;
+return
 @1
 Jim: There's quite a view from here.
 Julie: Do you see anything on the sea?
@@ -8806,7 +8816,7 @@ Balloonist: Of course. But I am not going anywhere today, it's getting dark.
 Balloonist: I am putting my burner in wait. Tomorrow we go at first light.
 Balloonist: This should be plenty of time for your friend to be here.
 Jim: Thank you, Sir. 
-  bool_to_badend_d2 = false;
+  bool_to_badend_d2 = true;
 stop
 ]]></Script>
             <DialogOptions />
@@ -8902,13 +8912,13 @@ stop
             <ShowTextParser>False</ShowTextParser>
             <Script><![CDATA[// Dialog script file
 @S  // Dialog startup entry point
-  bool_in_end = true;
+  bool_in_intro = true;
 Intro: It's morning.
 Intro: Julie didn't show up and is not responding on the radio.
 Intro: You can't find her. Eventually, you concede and fly back to land with the old man in his hot air balloon.
 Intro: You think about coming back with a search team.
 Intro: Julie is never found.
-  bool_in_end = false;
+  bool_in_intro = false;
 stop
 ]]></Script>
             <DialogOptions />
@@ -9098,6 +9108,181 @@ stop]]></Script>
                 <Say>False</Say>
               </DialogOption>
             </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>20</ID>
+            <Name>dIslandNearBeach</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+return
+@1
+Jim: Julie, what happened to us?
+Julie: You were cheap and rented a boat...
+Julie: Normal people mean there is a pilot that knows its thing. Not only the boat.
+Julie: I knew you could pilot because of your job but...
+Julie: Navigating? And trusting a phone GPS map on the sea?
+Julie: So we got lost... Out of fuel... Ended up here.
+Jim: Right... But I was talking about us.
+option-off 1
+option-on 2
+  bool_in_dialog = false;
+stop
+@2
+Jim: We had the world right? We could do and be anything!
+Jim: Why do I feel we are stuck?
+Julie: Time, Jim. It's not infinite you know?
+Julie: We are... Living... Yeah, it's different from other people.
+Jim: We are doing well right?
+Julie: We just need to keep working as a team and all will be good.
+option-off 2
+option-on 3
+  bool_in_dialog = false;
+stop
+@3
+Jim: You need to let me help Julie.
+Jim: Tell me, what's going on.
+option-off 3
+option-on 4
+  bool_in_dialog = false;
+stop
+@4
+Jim: I am not going anywhere until you let me help.
+Jim: We are all healing on this day.
+Julie: Well... I am not.
+option-off 4
+option-on 5
+  bool_in_dialog = false;
+stop
+@5
+Jim: Let me help.
+Julie: I hurt myself... It was stupid, a distraction.
+Julie: I fell when coming here to the radio tower.
+Julie: I wanted to find you so bad. We are better together.
+Julie: My feet hurt bad, I think I broke something... I can't walk.
+Julie: I am talking laid on the floor here... Crawling around.
+Julie: Looking on the maps I can't figure how to guide you here...
+Julie: It should have a direct way from there to here.
+Julie: We need to find some help, Jim.
+option-off 5
+option-on 6
+  Objective.SetCurrent(eObjective_FindAWayToReachJulie);
+  bool_in_dialog = false;
+stop
+@6
+Jim: A direct way... Only if someone carved these mountains.
+Jim: I got this. We will be alright. 
+  if(bool_intro_made_breakfast)
+  {
+Jim: We will soon be home and sleep a lot.
+Jim: And then I will wake up before you and make breakfast.
+Jim: Waffles, mixed eggs, milk and coffee, and melon slices.
+  } else {
+Jim: We will be home in our nice bed sleeping through the weekend.
+  }
+  if(bool_intro_watched_comedy)
+  {
+Jim: and then we will watch that Andy Samberg movie you've been wanting to.
+Julie: or binge a season of Brooklyn Nine-Nine.
+  } else {
+Jim: And we will watch that new superhero show you wanted.
+Julie: which you will either download for me as proof of love.
+Julie: or use one of your coupons.
+  }
+option-off 6
+option-on 7
+  bool_in_dialog = false;
+stop
+@7
+Jim: We will be alright Julie.
+Julie: ... Yeah, we will be cozy up in our home in no time.
+  bool_in_dialog = false;
+stop
+]]></Script>
+            <DialogOptions>
+              <DialogOption>
+                <ID>1</ID>
+                <Text />
+                <Show>True</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>2</ID>
+                <Text />
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>3</ID>
+                <Text />
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>4</ID>
+                <Text />
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>5</ID>
+                <Text />
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>6</ID>
+                <Text />
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+              <DialogOption>
+                <ID>7</ID>
+                <Text />
+                <Show>False</Show>
+                <Say>False</Say>
+              </DialogOption>
+            </DialogOptions>
+          </Dialog>
+          <Dialog>
+            <ID>21</ID>
+            <Name>dIslandNearOutCave1</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Julie: Jim, don't worry, I will find a way to meet you at the clearance.
+  bool_in_dialog = false;
+stop]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>22</ID>
+            <Name>dIslandNearOutCave2</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[// Dialog script file
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: You just hold up, alright Julie?
+Julie: It's all fine here.
+  bool_in_dialog = false;
+stop]]></Script>
+            <DialogOptions />
+          </Dialog>
+          <Dialog>
+            <ID>23</ID>
+            <Name>dIslandNearOutCave3</Name>
+            <ShowTextParser>False</ShowTextParser>
+            <Script><![CDATA[
+@S  // Dialog startup entry point
+  bool_in_dialog = true;
+Jim: What do I do now...
+Julie: Follow the creek to the beach.
+Jim: Uhm... Follow creek... Right.
+  bool_in_dialog = false;
+stop]]></Script>
+            <DialogOptions />
           </Dialog>
         </Dialogs>
       </DialogFolder>
@@ -9709,6 +9894,21 @@ stop]]></Script>
           <Name>bool_show_game_objectives</Name>
           <Type>bool</Type>
           <DefaultValue>true</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_intro_avoided_julie</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_intro_watched_comedy</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
+        </GlobalVariable>
+        <GlobalVariable>
+          <Name>bool_intro_made_breakfast</Name>
+          <Type>bool</Type>
+          <DefaultValue>false</DefaultValue>
         </GlobalVariable>
       </Variables>
     </GlobalVariables>

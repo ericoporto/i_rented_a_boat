@@ -6,6 +6,7 @@ enum TargetObjective {
   eObjective_FindYourWayToTheBeach,
   eObjective_FindLighthouseMountain, 
   eObjective_ReachLighthouseMountainTop, 
+  eObjective_FindAWayToReachJulie, 
   eObjectiveCOUNT, 
 };
 
