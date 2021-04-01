@@ -3648,6 +3648,47 @@
                 <Enabled>True</Enabled>
                 <Visible>True</Visible>
               </GUILabel>
+              <GUIButton>
+                <OnClick />
+                <ClickAction>RunScript</ClickAction>
+                <NewModeNumber>0</NewModeNumber>
+                <ClipImage>False</ClipImage>
+                <TextAlignment>TopCenter</TextAlignment>
+                <TextColor>0</TextColor>
+                <Font>0</Font>
+                <PushedImage>0</PushedImage>
+                <MouseoverImage>0</MouseoverImage>
+                <Image>353</Image>
+                <Text />
+                <Height>40</Height>
+                <Locked>False</Locked>
+                <Width>40</Width>
+                <Left>10</Left>
+                <Top>298</Top>
+                <ZOrder>25</ZOrder>
+                <ID>25</ID>
+                <Name>Button16</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUIButton>
+              <GUILabel>
+                <TextAlignment>Left</TextAlignment>
+                <TextColor>59164</TextColor>
+                <Font>4</Font>
+                <Text xml:space="preserve">toggle phone light in cave</Text>
+                <Height>46</Height>
+                <Locked>False</Locked>
+                <Width>131</Width>
+                <Left>55</Left>
+                <Top>298</Top>
+                <ZOrder>26</ZOrder>
+                <ID>26</ID>
+                <Name>Label19</Name>
+                <Clickable>True</Clickable>
+                <Enabled>True</Enabled>
+                <Visible>True</Visible>
+              </GUILabel>
             </Controls>
           </GUIMain>
           <GUIMain>
@@ -13397,6 +13438,21 @@ stop]]></Script>
                       <OffsetY>0</OffsetY>
                       <ImportHeight>32</ImportHeight>
                       <ImportWidth>32</ImportWidth>
+                      <ImportAsTile>False</ImportAsTile>
+                      <Frame>0</Frame>
+                      <RemapToGamePalette>False</RemapToGamePalette>
+                      <RemapToRoomPalette>False</RemapToRoomPalette>
+                      <ImportMethod>LeaveAsIs</ImportMethod>
+                      <ImportAlphaChannel>True</ImportAlphaChannel>
+                    </Source>
+                  </Sprite>
+                  <Sprite Slot="353" Width="40" Height="40" ColorDepth="32" Resolution="Real" AlphaChannel="True">
+                    <Source>
+                      <FileName>Sprites/guis/inputkeys/key_ctrl.png</FileName>
+                      <OffsetX>0</OffsetX>
+                      <OffsetY>0</OffsetY>
+                      <ImportHeight>40</ImportHeight>
+                      <ImportWidth>40</ImportWidth>
                       <ImportAsTile>False</ImportAsTile>
                       <Frame>0</Frame>
                       <RemapToGamePalette>False</RemapToGamePalette>
