@@ -22361,6 +22361,30 @@ stop]]></Script>
               <ScriptAndHeader>
                 <ScriptAndHeader_Header>
                   <Script>
+                    <FileName>Vec3.ash</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>413431170</Key>
+                    <IsHeader>True</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Header>
+                <ScriptAndHeader_Script>
+                  <Script>
+                    <FileName>Vec3.asc</FileName>
+                    <Name />
+                    <Description />
+                    <Author />
+                    <Version />
+                    <Key>413431170</Key>
+                    <IsHeader>False</IsHeader>
+                  </Script>
+                </ScriptAndHeader_Script>
+              </ScriptAndHeader>
+              <ScriptAndHeader>
+                <ScriptAndHeader_Header>
+                  <Script>
                     <FileName>dicttoini.ash</FileName>
                     <Name />
                     <Description />
@@ -22522,30 +22546,6 @@ stop]]></Script>
                     <Author />
                     <Version />
                     <Key>1661473395</Key>
-                    <IsHeader>False</IsHeader>
-                  </Script>
-                </ScriptAndHeader_Script>
-              </ScriptAndHeader>
-              <ScriptAndHeader>
-                <ScriptAndHeader_Header>
-                  <Script>
-                    <FileName>math3d.ash</FileName>
-                    <Name />
-                    <Description />
-                    <Author />
-                    <Version />
-                    <Key>1726973583</Key>
-                    <IsHeader>True</IsHeader>
-                  </Script>
-                </ScriptAndHeader_Header>
-                <ScriptAndHeader_Script>
-                  <Script>
-                    <FileName>math3d.asc</FileName>
-                    <Name />
-                    <Description />
-                    <Author />
-                    <Version />
-                    <Key>1726973583</Key>
                     <IsHeader>False</IsHeader>
                   </Script>
                 </ScriptAndHeader_Script>
