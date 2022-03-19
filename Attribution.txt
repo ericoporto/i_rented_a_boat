@@ -1,9 +1,7 @@
 I have edited on top of all of the below, some public domain assets may not be listed (mostly because I didn't kept notes on them).
 
 Sound Effects, Ambience and Music:
-
 World Map - Scrabbit
-
 rpg_sound_pack - by artisticdude
 Grass Foot Step Sounds (Yo Frankie!) - by Blender Foundation
 40+ FREE Footstep SFX - by PremiumBeat.com
@@ -18,7 +16,6 @@ Ambience, Seaside Waves, Close, A.wav - InspectorJ (Jonathan Shaw)
 "Flying above the ocean" - Tad Miller
 
 Graphics:
-
 Walkie talkie - by Noah
 sunset - Abdullah Ghatasheh
 Balloon - by Michael Stöter
